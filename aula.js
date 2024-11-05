@@ -1,5 +1,8 @@
-var calcular = require('./calculadora')
+function equacao(a, b, operacao) {
+    let r = a + b * operacao(a, b)
+    return r
+}
 
-var a = calcular.soma(3, 4)
-
-console.log(a)
+let x = equacao(5, 6, (x, y) => {
+    return x + (y * y)
+})
