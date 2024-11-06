@@ -1,10 +1,9 @@
-module.exports = {
+function soma(a, b) {
+    return a + b
+}
 
-    soma: (a, b) => {
-        return a + b
-    },
+function subtracao(a, b) {
+    return a - b
+}
 
-    subtracao: (a, b) => {
-        return a - b
-    }
-}// fim do objeto exportado
+export default {soma, subtracao}

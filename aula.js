@@ -1,8 +1,3 @@
-function equacao(a, b, operacao) {
-    let r = a + b * operacao(a, b)
-    return r
-}
+import calc from './calculadora.js'
 
-let x = equacao(5, 6, (x, y) => {
-    return x + (y * y)
-})
+console.log(calc.soma(3, 4))
