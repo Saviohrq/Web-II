@@ -1,17 +1,19 @@
-function dobraVetor(x) {
-    var y = Array(x.length);
+function dobraVetor(X) {
+    let Y = [];
 
-    for(let i = 0; i < x.length; i++) {
-        y[i] = 2 * x[i];
+    for(let i = 0; i < X.length; i++) {
+        Y[i] = X[i] * 2;
     }
-    return y;
+    return Y;
 }
 
-function somaVetor(x, dobro) {
-    for(let i = 0; i < x.length; i++) {
-        x[i] += dobro[i];
+function somaVetor(X, dobro) {
+    let Y = dobro(X);
+    let Z = [];
+    for(let i = 0; i < X.length; i++) {
+        Z[i] = X[i] + Y[i];
     }
-    return x;
+    return Z;
 }
 
 export default {dobraVetor, somaVetor}
